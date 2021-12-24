@@ -81,6 +81,54 @@
 			</div>
 		</section>
 
+		<!-- Project Carousel begin -->
+		<section class="website-carousel" id="feature">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="client-area">
+						<div class="website-carousel-img slider">
+							<div class="slide">
+								<a href="./project/aarogya_pharmacy.html">
+									<img src="./project/Images/portfolio/aarogya-pharmacy.png">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="./project/greater_noida_tattoo_studio.html">
+									<img src="./project/Images/portfolio/greater_noida_tattoo_studio.png">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="./project/ar_sofa_center_and_repairing.html">
+									<img src="./project/Images/portfolio/a_r_sofa_center_and_repairing.png">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="./project/the_bike_safari.html">
+									<img src="./project/Images/portfolio/the_bike_safari.png">
+								</a>
+							</div>
+							<div class="slide">
+								<img src="./project/Images/portfolio/aarogya-pharmacy.png">
+							</div>
+							<div class="slide">
+								<img src="./project/Images/portfolio/aarogya-pharmacy.png">
+							</div>
+							<div class="slide">
+								<img src="./project/Images/portfolio/aarogya-pharmacy.png">
+							</div>
+							<div class="slide">
+								<img src="./project/Images/portfolio/aarogya-pharmacy.png">
+							</div>
+							<div class="slide">
+								<img src="./project/Images/portfolio/aarogya-pharmacy.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Our testimonial section end -->
+
 		<!-- Services section begin -->
 		<section class="services spad mr-rl">
 			<div class="row">
@@ -134,7 +182,7 @@
 		</section>
 
 		<!-- About Section Begin -->
-		<section class="about-section">
+		<!-- <section class="about-section">
 			<div class="row">
 				<div class="col-md-8 col-sm-12">
 					<div class="about-box">
@@ -203,7 +251,7 @@
 			</div>
 			<img src="./images/icon/pattern2.png" class="small-icon4">
 			<img src="./images/square.png" class="small-icon5">
-		</section>
+		</section> -->
 
 		<div class="website-add mr-rl">
 			<img src="./Images/website-add.jpg" alt="">
@@ -219,8 +267,8 @@
 				</div>
 				<div class="mt-lg-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
 					<div class="class-thumb">
-						<a href="./project/aarogya_pharmacy.html"><img src="./project/Images/portfolio/aarogya-pharmacy.png"
-								class="img-fluid" alt="Class"></a>
+						<a href="./project/aarogya_pharmacy.html"><img
+								src="./project/Images/portfolio/aarogya-pharmacy.png" class="img-fluid" alt="Class"></a>
 
 						<div class="class-info">
 							<a href="./project/aarogya_pharmacy.html">
@@ -688,6 +736,33 @@
 			});
 		});
 	</script>
+
+	<script>
+		// Slick Carousel Animation Script
+		$(document).ready(function () {
+			$('.website-carousel-img').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: false,
+				dots: false,
+				pouseOnHover: false,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 1
+					}
+				}]
+			});
+		});
+	</script>
+
 </body>
 
 </html>
